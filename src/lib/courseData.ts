@@ -154,13 +154,75 @@ export const courses: Course[] = [
   },
 ];
 
-export const instructors = [
-  { name: "Rahul Sharma", role: "Senior Software Engineer", company: "Google" },
-  { name: "Priya Patel", role: "Staff Engineer", company: "Amazon" },
-  { name: "Arjun Mehta", role: "Engineering Manager", company: "Microsoft" },
-  { name: "Sneha Gupta", role: "SDE-3", company: "Zomato" },
-  { name: "Vikram Singh", role: "Tech Lead", company: "Atlassian" },
-  { name: "Ananya Reddy", role: "Senior SRE", company: "Blinkit" },
+export interface Instructor {
+  name: string;
+  role: string;
+  company: string;
+  image: string;
+  linkedin: string;
+  bio: string;
+  experience: string;
+}
+
+// Professional headshots in black attire (Unsplash)
+const IMG = (id: string) =>
+  `https://images.unsplash.com/photo-${id}?w=400&h=400&fit=crop&crop=face`;
+
+export const instructors: Instructor[] = [
+  {
+    name: "Rahul Sharma",
+    role: "Senior Software Engineer",
+    company: "Google",
+    image: IMG("1569390173732-5c735072c80f"), // Man in black t-shirt
+    linkedin: "https://www.linkedin.com/in/rahul-sharma",
+    bio: "Ex-Google engineer with deep expertise in distributed systems and algorithms. Passionate about helping engineers crack FAANG interviews.",
+    experience: "8+ years",
+  },
+  {
+    name: "Priya Patel",
+    role: "Staff Engineer",
+    company: "Amazon",
+    image: IMG("1573497019940-1c28c88b4f3e"), // Woman professional black top
+    linkedin: "https://www.linkedin.com/in/priya-patel",
+    bio: "Staff engineer at Amazon. Specializes in backend systems, microservices, and scaling challenges. Loves mentoring aspiring engineers.",
+    experience: "10+ years",
+  },
+  {
+    name: "Arjun Mehta",
+    role: "Engineering Manager",
+    company: "Microsoft",
+    image: IMG("1619216313450-866406ac6bb9"), // Man in black t-shirt
+    linkedin: "https://www.linkedin.com/in/arjun-mehta",
+    bio: "Engineering Manager at Microsoft. Brings leadership experience from building and scaling teams at top product companies.",
+    experience: "12+ years",
+  },
+  {
+    name: "Sneha Gupta",
+    role: "SDE-3",
+    company: "Zomato",
+    image: IMG("1580489944761-15a19d654956"), // Woman professional dark attire
+    linkedin: "https://www.linkedin.com/in/sneha-gupta",
+    bio: "Senior engineer at Zomato with expertise in high-throughput systems. Helped scale order processing to millions of daily requests.",
+    experience: "7+ years",
+  },
+  {
+    name: "Vikram Singh",
+    role: "Tech Lead",
+    company: "Atlassian",
+    image: IMG("1607149553624-dce20065fb8b"), // Man in black button-up
+    linkedin: "https://www.linkedin.com/in/vikram-singh",
+    bio: "Tech Lead at Atlassian. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
+    experience: "9+ years",
+  },
+  {
+    name: "Ananya Reddy",
+    role: "Senior SRE",
+    company: "Blinkit",
+    image: IMG("1594744803329-e58b31de8bf5"), // Woman professional
+    linkedin: "https://www.linkedin.com/in/ananya-reddy",
+    bio: "Senior SRE at Blinkit. DevOps and infrastructure specialist. Expert in Kubernetes, observability, and building reliable systems at scale.",
+    experience: "6+ years",
+  },
 ];
 
 export const testimonials = [
