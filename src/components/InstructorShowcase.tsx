@@ -36,7 +36,7 @@ const InstructorShowcase = () => {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground"
           >
-            Senior engineers and tech leads from Google, Amazon, Microsoft & more — here to guide you.
+            Senior engineers and tech leads from Blinkit, Google, Amazon, Microsoft,Zomato, Atlassian, PhonePe, CRED, Expedia, Oyo & more — here to guide you.
           </motion.p>
         </div>
 
