@@ -13,7 +13,7 @@ A clean, professional website for Level Up Engineers to showcase courses, build 
 - **Navbar**: Logo (Level Up Engineers), navigation links (Home, Courses, About, Contact), and a prominent "Book a Free Session" CTA button
 - **Hero Section**: Bold headline like "Crack Your Dream Tech Job", subheadline about mentorship from FAANG engineers, CTA buttons ("Explore Courses" and "Talk to a Counselor"), and key stats (e.g., students placed, mentor companies, success rate)
 - **Courses Overview**: Cards for all 4 courses (Interview Prep, Backend, DevOps+SRE, Full Stack) with duration, highlights, and "Learn More" buttons linking to individual course pages
-- **Why Level Up Engineers**: Key differentiators – 1:1 mentorship, resume review, referrals to top companies, instructors from Zomato/Google/Amazon/Microsoft etc.
+- **Why Level Up Engineers**: Key differentiators – 1:1 mentorship, resume review, referrals to top companies, instructors from Zomato/Blinkit/Park+/PhonePe/Atlassian/Google/Amazon/Microsoft etc.
 - **Instructor Showcase**: Grid of instructor cards with name, company logo/name, and role (placeholder data for now)
 - **Testimonials/Success Stories**: Student testimonial cards (placeholder content)
 - **Lead Capture CTA Banner**: "Ready to Level Up?" section with a quick enrollment form or button to contact page
