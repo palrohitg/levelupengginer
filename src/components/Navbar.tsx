@@ -6,7 +6,7 @@ import logo from "@/assets/logo.jpeg";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Courses", to: "/#courses" },
+  { label: "Courses", to: "/courses" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
@@ -15,16 +15,7 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  const handleNavClick = (to: string) => {
-    setMobileOpen(false);
-    if (to.includes("#")) {
-      const id = to.split("#")[1];
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
+  const handleNavClick = () => setMobileOpen(false);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-card/80 backdrop-blur-md">
@@ -40,9 +31,11 @@ const Navbar = () => {
             <Link
               key={link.to}
               to={link.to}
-              onClick={() => handleNavClick(link.to)}
+              onClick={handleNavClick}
               className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === link.to ? "text-primary" : "text-muted-foreground"
+                location.pathname === link.to || (link.to === "/courses" && location.pathname.startsWith("/courses"))
+                  ? "text-primary"
+                  : "text-muted-foreground"
               }`}
             >
               {link.label}
@@ -67,7 +60,7 @@ const Navbar = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                onClick={() => handleNavClick(link.to)}
+                onClick={handleNavClick}
                 className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
               >
                 {link.label}

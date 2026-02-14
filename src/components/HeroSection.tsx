@@ -40,9 +40,9 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Button asChild size="lg" className="gap-2 text-base">
-              <a href="#courses">
+              <Link to="/courses">
                 Explore Courses <ArrowRight className="h-4 w-4" />
-              </a>
+              </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="text-base">
               <Link to="/contact">Talk to a Counselor</Link>
