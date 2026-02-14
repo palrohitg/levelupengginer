@@ -42,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm font-semibold">Email</div>
-                      <div className="text-sm text-muted-foreground">hello@levelupengineers.com</div>
+                      <div className="text-sm text-muted-foreground">contact@levelupengineers.com</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -51,7 +51,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm font-semibold">Phone</div>
-                      <div className="text-sm text-muted-foreground">+91 98765 43210</div>
+                      <div className="text-sm text-muted-foreground">+91 7206912018</div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -60,7 +60,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <div className="text-sm font-semibold">Location</div>
-                      <div className="text-sm text-muted-foreground">Bangalore, India</div>
+                      <div className="text-sm text-muted-foreground">Gurugram, India</div>
                     </div>
                   </div>
                 </div>
