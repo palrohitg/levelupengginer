@@ -172,7 +172,7 @@ export const instructors: Instructor[] = [
   {
     name: "Vikas Pal",
     role: "Senior Software Engineer",
-    company: "Blinkit",
+    company: "Blinkit,Zomato,Park+",
     image: "/instructor-vikas.jpeg", // Your photo – place file in public/
     linkedin: "https://www.linkedin.com/in/palrohitg/",
     bio: "Senior Software Engineer at Blinkit. Ex-Park+ engineer with deep expertise in  backend,system design, distributed systems and algorithms. Took 300+ interviews",
