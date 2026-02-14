@@ -170,13 +170,13 @@ const IMG = (id: string) =>
 
 export const instructors: Instructor[] = [
   {
-    name: "Rahul Sharma",
+    name: "Vikas Pal",
     role: "Senior Software Engineer",
-    company: "Google",
-    image: IMG("1569390173732-5c735072c80f"), // Man in black t-shirt
-    linkedin: "https://www.linkedin.com/in/rahul-sharma",
-    bio: "Ex-Google engineer with deep expertise in distributed systems and algorithms. Passionate about helping engineers crack FAANG interviews.",
-    experience: "8+ years",
+    company: "Blinkit",
+    image: "/instructor-vikas.jpeg", // Your photo – place file in public/
+    linkedin: "https://www.linkedin.com/in/palrohitg/",
+    bio: "Senior Software Engineer at Blinkit. Ex-Park+ engineer with deep expertise in  backend,system design, distributed systems and algorithms. Took 300+ interviews",
+    experience: "5+ years",
   },
   {
     name: "Priya Patel",
