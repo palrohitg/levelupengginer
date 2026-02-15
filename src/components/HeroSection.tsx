@@ -29,7 +29,7 @@ const HeroSection = () => {
               <span className="text-primary"> Tech Job</span>
             </h1>
             <p className="mb-8 text-lg text-muted-foreground sm:text-xl">
-              Get mentored by engineers from Google, Amazon, Microsoft & more. Master DSA, System Design, Backend, DevOps, and Full Stack — with 1:1 guidance, resume reviews & referrals.
+              Get mentored by engineers from Blinkit, Zomato, Paytm, Google,Amazon, Microsoft & more. Master DSA, System Design, Backend, DevOps, and Full Stack — with 1:1 guidance, resume reviews & referrals.
             </p>
           </motion.div>
 
