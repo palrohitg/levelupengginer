@@ -205,15 +205,15 @@ export const instructors: Instructor[] = [
     bio: "NIT Kurukshetra alum. Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
     experience: "7+ years",
   },
-  // {
-  //   name: "Vikram Singh",
-  //   role: "Tech Lead",
-  //   company: "Atlassian",
-  //   image: "/instructor-deepankar.jpeg", // Your photo – place file in public/
-  //   linkedin: "https://www.linkedin.com/in/vikram-singh",
-  //   bio: "Tech Lead at Atlassian. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
-  //   experience: "9+ years",
-  // },
+  {
+    name: "Shiv Ram",
+    role: "Tech Lead",
+    company: "Paytm",
+    image: "/instructor-shivram.jpeg",
+    linkedin: "https://www.linkedin.com/in/jani-shiv-ram/",
+    bio: "NITK alum. Tech Lead at Paytm. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
+    experience: "5+ years",
+  },
   // {
   //   name: "Ananya Reddy",
   //   role: "Senior SRE",
