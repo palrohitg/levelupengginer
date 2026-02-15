@@ -175,54 +175,54 @@ export const instructors: Instructor[] = [
     company: "Blinkit,Zomato,Park+",
     image: "/instructor-vikas.jpeg", // Your photo – place file in public/
     linkedin: "https://www.linkedin.com/in/palrohitg/",
-    bio: "Senior Software Engineer at Blinkit. Ex-Park+ engineer with deep expertise in  backend,system design, distributed systems and algorithms. Took 300+ interviews",
+    bio: "Senior Software Engineer at Blinkit,Ex-Park+ engineer with deep expertise in  backend,system design, distributed systems and algorithms. Took 300+ interviews",
     experience: "5+ years",
   },
   {
-    name: "Priya Patel",
-    role: "Staff Engineer",
-    company: "Amazon",
-    image: IMG("1573497019940-1c28c88b4f3e"), // Woman professional black top
-    linkedin: "https://www.linkedin.com/in/priya-patel",
-    bio: "Staff engineer at Amazon. Specializes in backend systems, microservices, and scaling challenges. Loves mentoring aspiring engineers.",
-    experience: "10+ years",
+    name: "Avinash Prajapati",
+    role: "Senior Software Engineer",
+    company: "Microsoft, Park+",
+    image: "/instructor-avinash.png", // Your photo – place file in public/
+    linkedin: "https://www.linkedin.com/in/aviprajapati/",
+    bio: "Senior Software Engineer with deep expertise in backend systems. Built and scaled services at Microsoft and Park+. Passionate about distributed systems, APIs, and mentoring engineers.",
+    experience: "5+ years",
   },
   {
-    name: "Arjun Mehta",
-    role: "Engineering Manager",
-    company: "Microsoft",
-    image: IMG("1619216313450-866406ac6bb9"), // Man in black t-shirt
-    linkedin: "https://www.linkedin.com/in/arjun-mehta",
-    bio: "Engineering Manager at Microsoft. Brings leadership experience from building and scaling teams at top product companies.",
-    experience: "12+ years",
+    name: "Naman Kumar",
+    role: "Software Engineer 2",
+    company: "Google, Blinkit",
+    image: "/instructor-naman.jpeg", // Your photo – place file in public/
+    linkedin: "https://www.linkedin.com/in/naman-kumar-83abb2187/",
+    bio: "Full stack engineer with experience at Google and Blinkit. Builds scalable products end-to-end and loves mentoring engineers on frontend, backend, and system design.",
+    experience: "3+ years",
   },
   {
-    name: "Sneha Gupta",
-    role: "SDE-3",
-    company: "Zomato",
-    image: IMG("1580489944761-15a19d654956"), // Woman professional dark attire
-    linkedin: "https://www.linkedin.com/in/sneha-gupta",
-    bio: "Senior engineer at Zomato with expertise in high-throughput systems. Helped scale order processing to millions of daily requests.",
+    name: "Deepankar Kumar Rao",
+    role: "Data Architect",
+    company: "Oyo, Park+",
+    image: "/instructor-deepankar.png", // Your photo – place file in public/
+    linkedin: "https://www.linkedin.com/in/deepankar-rao-615483150/",
+    bio: "Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
     experience: "7+ years",
   },
-  {
-    name: "Vikram Singh",
-    role: "Tech Lead",
-    company: "Atlassian",
-    image: IMG("1607149553624-dce20065fb8b"), // Man in black button-up
-    linkedin: "https://www.linkedin.com/in/vikram-singh",
-    bio: "Tech Lead at Atlassian. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
-    experience: "9+ years",
-  },
-  {
-    name: "Ananya Reddy",
-    role: "Senior SRE",
-    company: "Blinkit",
-    image: IMG("1594744803329-e58b31de8bf5"), // Woman professional
-    linkedin: "https://www.linkedin.com/in/ananya-reddy",
-    bio: "Senior SRE at Blinkit. DevOps and infrastructure specialist. Expert in Kubernetes, observability, and building reliable systems at scale.",
-    experience: "6+ years",
-  },
+  // {
+  //   name: "Vikram Singh",
+  //   role: "Tech Lead",
+  //   company: "Atlassian",
+  //   image: "/instructor-deepankar.jpeg", // Your photo – place file in public/
+  //   linkedin: "https://www.linkedin.com/in/vikram-singh",
+  //   bio: "Tech Lead at Atlassian. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
+  //   experience: "9+ years",
+  // },
+  // {
+  //   name: "Ananya Reddy",
+  //   role: "Senior SRE",
+  //   company: "Blinkit",
+  //   image: IMG("1594744803329-e58b31de8bf5"), // Woman professional
+  //   linkedin: "https://www.linkedin.com/in/ananya-reddy",
+  //   bio: "Senior SRE at Blinkit. DevOps and infrastructure specialist. Expert in Kubernetes, observability, and building reliable systems at scale.",
+  //   experience: "6+ years",
+  // },
 ];
 
 export const testimonials = [
