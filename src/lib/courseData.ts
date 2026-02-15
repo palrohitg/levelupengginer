@@ -214,15 +214,15 @@ export const instructors: Instructor[] = [
     bio: "NITK alum. Tech Lead at Paytm. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
     experience: "5+ years",
   },
-  // {
-  //   name: "Ananya Reddy",
-  //   role: "Senior SRE",
-  //   company: "Blinkit",
-  //   image: IMG("1594744803329-e58b31de8bf5"), // Woman professional
-  //   linkedin: "https://www.linkedin.com/in/ananya-reddy",
-  //   bio: "Senior SRE at Blinkit. DevOps and infrastructure specialist. Expert in Kubernetes, observability, and building reliable systems at scale.",
-  //   experience: "6+ years",
-  // },
+  {
+    name: "Rahul",
+    role: "Senior Software Engineer",
+    company: "Dream11",
+    image: "/instructor-rahul.png",
+    linkedin: "http://linkedin.com/in/rahul-agrahari-03a59b162",
+    bio: "Backend Engineer at Dream11. Expertise in building and scaling high-throughput systems that handle millions of users. Passionate about distributed systems and mentoring engineers.",
+    experience: "6+ years",
+  },
 ];
 
 export const testimonials = [
