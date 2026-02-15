@@ -202,7 +202,7 @@ export const instructors: Instructor[] = [
     company: "Oyo, Park+",
     image: "/instructor-deepankar.png", // Your photo – place file in public/
     linkedin: "https://www.linkedin.com/in/deepankar-rao-615483150/",
-    bio: "Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
+    bio: "NIT Kurukshetra alum. Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
     experience: "7+ years",
   },
   // {
