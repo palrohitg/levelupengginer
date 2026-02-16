@@ -103,17 +103,17 @@ const CoursePage = () => {
           <section className="py-16">
             <div className="container">
               <h2 className="mb-8 text-center font-display text-2xl font-bold sm:text-3xl">Course Pricing</h2>
-              <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
+              <div className={`mx-auto gap-6 ${course.slug === 'interview-prep' ? 'flex justify-center' : 'grid max-w-4xl sm:grid-cols-2'}`}>
                 {/* Base Course */}
                 {course.basePrice && (
                   <motion.div
-                    className="rounded-xl border-2 bg-card p-6"
+                    className={`rounded-xl border-2 bg-card p-6 ${course.slug === 'interview-prep' ? 'max-w-md text-center' : ''}`}
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className="mb-4 flex items-center gap-2">
+                    <div className={`mb-4 flex items-center gap-2 ${course.slug === 'interview-prep' ? 'justify-center' : ''}`}>
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                         <Code className="h-5 w-5" />
                       </div>
@@ -126,7 +126,7 @@ const CoursePage = () => {
                       </div>
                       <div className="flex items-center gap-1">
                         <IndianRupee className="h-4 w-4 text-muted-foreground" />
-                        <span className="font-display text-sm font-medium text-muted-foreground line-through">49,999</span>
+                        <span className="font-display text-sm font-medium text-muted-foreground line-through">{course.slug === 'devops-sre' ? '52,999' : '49,999'}</span>
                       </div>
                     </div>
                     <p className="mb-4 text-sm text-muted-foreground">{course.duration} Program</p>
@@ -176,7 +176,7 @@ const CoursePage = () => {
                       </div>
                       <div className="flex items-center gap-1">
                         <IndianRupee className="h-4 w-4 text-muted-foreground" />
-                        <span className="font-display text-sm font-medium text-muted-foreground line-through">89,999</span>
+                        <span className="font-display text-sm font-medium text-muted-foreground line-through">{course.slug === 'devops-sre' ? '92,999' : '89,999'}</span>
                       </div>
                     </div>
                     <p className="mb-4 text-sm text-muted-foreground">
