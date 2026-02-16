@@ -36,6 +36,8 @@ const Footer = () => {
               <li><Link to="/courses/backend-engineering" className="hover:text-primary transition-colors">Backend Engineering</Link></li>
               <li><Link to="/courses/devops-sre" className="hover:text-primary transition-colors">DevOps + SRE</Link></li>
               <li><Link to="/courses/full-stack" className="hover:text-primary transition-colors">Full Stack Engineering</Link></li>
+              <li><Link to="/courses/data-engineering" className="hover:text-primary transition-colors">Data Engineering</Link></li>
+              <li><Link to="/courses/android-engineering" className="hover:text-primary transition-colors">Android Engineering</Link></li>
             </ul>
           </div>
 

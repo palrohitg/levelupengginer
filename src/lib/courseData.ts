@@ -27,6 +27,9 @@ export const courses: Course[] = [
     description: "Master Data Structures, Algorithms, core Computer Science fundamentals, and System Design to crack interviews at top product-based companies.",
     overview: "An intensive 3-month program designed to transform your problem-solving and technical skills to prepare you for coding rounds and real interview scenarios at FAANG and top product companies. Includes 1:1 mentorship, mock interviews, machine coding challenges, resume review, and referrals.",
     icon: "Code",
+    basePrice: 15999,
+    internshipPrice: 23999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from FAANG engineers",
       "200+ DSA problems with detailed solutions",
@@ -162,10 +165,13 @@ export const courses: Course[] = [
     slug: "devops-sre",
     title: "DevOps + SRE Engineering Program",
     shortTitle: "DevOps + SRE",
-    duration: "6 Months",
+    duration: "4 Months",
     description: "Master DevOps practices, cloud infrastructure, containers, CI/CD, and Site Reliability Engineering with hands-on projects and mock interview preparation to help you land your dream DevOps role.",
-    overview: "A 6-month immersive, hands-on program covering everything from Linux fundamentals to advanced Kubernetes, CI/CD, and SRE practices. Build real cloud infrastructure projects, practice mock interviews with feedback, and get placement support including resume review and referrals.",
+    overview: "A 4-month immersive, hands-on program covering everything from Linux fundamentals to advanced Kubernetes, CI/CD, and SRE practices. Build real cloud infrastructure projects, practice mock interviews with feedback, and get placement support including resume review and referrals.",
     icon: "Cloud",
+    basePrice: 22999,
+    internshipPrice: 30999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from DevOps/SRE leads",
       "Real-world hands-on projects with cloud deployment",
@@ -173,7 +179,8 @@ export const courses: Course[] = [
       "Infrastructure as Code & automation workflows",
       "Mock interview rounds with senior engineers",
       "Incident management & SRE best practices",
-      "Resume review & referrals"
+      "Resume review & referrals",
+      "Placement support & career coaching"
     ],
     modules: [
       {
@@ -234,10 +241,13 @@ export const courses: Course[] = [
     slug: "full-stack",
     title: "Full Stack Engineering Program",
     shortTitle: "Full Stack Engineering",
-    duration: "6 Months",
+    duration: "4 Months",
     description: "Become a complete, job-ready full stack engineer with modern frontend, backend, cloud deployment, real projects, portfolio builds, and interview practice.",
-    overview: "A comprehensive 6-month program that covers the full web development stack — from pixel-perfect frontends to scalable backends, deployment, system design, real project builds, and mock interview preparation. Graduate ready to build and ship production applications with confidence.",
+    overview: "A comprehensive 4-month program that covers the full web development stack — from pixel-perfect frontends to scalable backends, deployment, system design, real project builds, and mock interview preparation. Graduate ready to build and ship production applications with confidence.",
     icon: "Layers",
+    basePrice: 19999,
+    internshipPrice: 27999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from full stack leads",
       "Build 4+ production-ready projects",
@@ -245,7 +255,8 @@ export const courses: Course[] = [
       "Portfolio builds & GitHub showcase",
       "Mock interviews & interview strategy sessions",
       "Deployment, DevOps basics & cloud hosting",
-      "Resume review & referrals"
+      "Resume review & referrals",
+      "Placement support & career coaching"
     ],
     modules: [
       {
@@ -319,13 +330,18 @@ export const courses: Course[] = [
     description: "Master the skills to build robust, scalable data pipelines, data warehouses, big data processing systems, and cloud data platforms — with real projects, mock interview prep, and placement support.",
     overview: "A comprehensive 6-month program that takes you from foundational data engineering concepts to building enterprise-level data pipelines and architectures. Learn SQL, Python, ETL/ELT, big data frameworks, cloud data platforms, orchestration tools, and real project deployments. Includes mock interviews, resume review, and referrals to help launch your career as a Data Engineer.",
     icon: "Database",
+    basePrice: 19999,
+    internshipPrice: 27999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from data engineering experts",
       "Build production-ready data pipelines & platforms",
       "Hands-on experience with Hadoop, Spark, Kafka & Airflow",
       "Cloud data platform skills (AWS/GCP/Azure)",
       "Mock interviews & feedback with senior engineers",
-      "Resume review, portfolio builds & referrals"
+      "Resume review, portfolio builds & referrals",
+      "Real-time streaming pipeline expertise",
+      "Placement support & career coaching"
     ],
     modules: [
       {
@@ -397,8 +413,11 @@ export const courses: Course[] = [
     shortTitle: "Android Engineering",
     duration: "4 Months",
     description: "Become a professional Android engineer by mastering Kotlin, Android SDK, Jetpack, app architecture, real projects, and interview skills — ready for mobile development roles.",
-    overview: "A 6-month hands-on Android engineering program — from Kotlin fundamentals and Android platform essentials to advanced app architecture, real-world projects, mock interview prep, and placement support. Learn by building production-grade apps, portfolio showcases, and get 1:1 mentorship and referrals.",
+    overview: "A 4-month hands-on Android engineering program — from Kotlin fundamentals and Android platform essentials to advanced app architecture, real-world projects, mock interview prep, and placement support. Learn by building production-grade apps, portfolio showcases, and get 1:1 mentorship and referrals.",
     icon: "Mobile",
+    basePrice: 19999,
+    internshipPrice: 27999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from Android leads",
       "Build production-ready mobile apps",
@@ -406,7 +425,8 @@ export const courses: Course[] = [
       "Jetpack & modern Android architecture",
       "Mock technical interviews & review",
       "Portfolio projects + Google Play deployment",
-      "Resume review & referrals"
+      "Resume review & referrals",
+      "Placement support & career coaching"
     ],
     modules: [
       {
@@ -549,22 +569,22 @@ export const instructors: Instructor[] = [
 
 export const testimonials = [
   {
-    name: "Amit Kumar",
-    role: "SDE-2 at Amazon",
-    text: "Level Up Engineers completely transformed my interview preparation. The 1:1 mentorship and structured approach helped me crack Amazon in just 2 months!",
-    avatar: "AK",
+    name: "Ayush",
+    role: "SDE-2 at Swiggy",
+    text: "Level Up Engineers completely transformed my interview preparation. The 1:1 mentorship and structured approach helped me crack Swiggy in just 2 months!",
+    avatar: "AY",
   },
   {
-    name: "Riya Joshi",
-    role: "Backend Engineer at Google",
+    name: "Nitish",
+    role: "Backend Engineer at HotStar",
     text: "The backend engineering program gave me real-world project experience that made all the difference. My mentor's guidance was invaluable.",
-    avatar: "RJ",
+    avatar: "NH",
   },
   {
-    name: "Karthik Nair",
-    role: "DevOps Engineer at Microsoft",
-    text: "From zero DevOps knowledge to landing a role at Microsoft – that's my Level Up Engineers journey. The hands-on approach is unmatched.",
-    avatar: "KN",
+    name: "Paras",
+    role: "DevOps Engineer at Amazon",
+    text: "From zero DevOps knowledge to landing a role at Amazon – that's my Level Up Engineers journey. The hands-on approach is unmatched.",
+    avatar: "PA",
   },
 ];
 
