@@ -18,140 +18,455 @@ export interface Course {
 export const courses: Course[] = [
   {
     slug: "interview-prep",
-    title: "Interview Prep Course – DSA + System Design",
+    title: "Interview Prep Course – DSA + CS Fundamentals + System Design",
     shortTitle: "Interview Prep",
     duration: "3 Months",
-    description: "Master Data Structures, Algorithms & System Design to crack interviews at top product-based companies.",
-    overview: "An intensive 3-month program designed to transform your problem-solving skills and prepare you for technical interviews at FAANG and top product-based companies. Includes 1:1 mentorship, mock interviews, resume review, and referrals.",
+    description: "Master Data Structures, Algorithms, core Computer Science fundamentals, and System Design to crack interviews at top product-based companies.",
+    overview: "An intensive 3-month program designed to transform your problem-solving and technical skills to prepare you for coding rounds and real interview scenarios at FAANG and top product companies. Includes 1:1 mentorship, mock interviews, machine coding challenges, resume review, and referrals.",
     icon: "Code",
     highlights: [
       "1:1 Mentorship from FAANG engineers",
       "200+ DSA problems with detailed solutions",
       "System Design fundamentals & case studies",
       "Mock interviews with real interviewers",
+      "Machine coding rounds practice",
+      "Core Computer Science fundamentals: OS, DBMS & Networking",
       "Resume review & optimization",
-      "Referrals to top companies",
+      "Referrals to top companies"
     ],
     modules: [
       {
         title: "Foundation – Arrays, Strings & Math",
-        topics: ["Arrays & Hashing", "Two Pointers", "Sliding Window", "String Manipulation", "Bit Manipulation"],
+        topics: [
+          "Arrays & Hashing",
+          "Two Pointers",
+          "Sliding Window",
+          "String Manipulation",
+          "Bit Manipulation"
+        ]
       },
       {
-        title: "Core DSA – Trees, Graphs & DP",
-        topics: ["Binary Trees & BST", "Graphs – BFS/DFS", "Dynamic Programming", "Backtracking", "Greedy Algorithms"],
+        title: "Core DSA – Trees, Graphs & Optimization",
+        topics: [
+          "Binary Trees & BST",
+          "Graphs – BFS & DFS",
+          "Dynamic Programming",
+          "Backtracking",
+          "Greedy Algorithms"
+        ]
       },
       {
-        title: "Advanced – System Design & Mock Interviews",
-        topics: ["System Design Fundamentals", "Designing Scalable Systems", "Database Design", "Caching & Load Balancing", "Mock Interview Rounds"],
+        title: "Computer Science Fundamentals – OS, DBMS & Networking",
+        topics: [
+          "Operating Systems basics: Processes, Scheduling, Memory & Concurrency",
+          "Database Management Systems: SQL & NoSQL, Normalization, Transactions",
+          "Computer Networks: Protocols, HTTP/HTTPS, TCP/IP models",
+          "OS/DB/Networking interview concepts & common questions"
+        ]
       },
-    ],
-  },
+      {
+        title: "Advanced System Design & Mock Interview Module",
+        topics: [
+          "System Design Fundamentals & Scalable Architecture",
+          "High-Level and Low-Level Design Case Studies",
+          "Design Patterns & Trade-offs",
+          "Machine Coding Rounds Practice",
+          "Live Mock Interviews with feedback",
+          "Interview strategies & behavioural preparation"
+        ]
+      }
+    ]
+  }
+  ,
   {
     slug: "backend-engineering",
     title: "Backend Engineering Program",
     shortTitle: "Backend Engineering",
-    duration: "6 Months",
-    description: "Build production-grade backend systems with microservices, databases, and scalable architecture.",
-    overview: "A comprehensive 6-month program that takes you from backend fundamentals to building production-ready systems. Learn from engineers at top companies and gain hands-on experience with real-world projects.",
+    duration: "4 Months",
+    description: "Build production-grade backend systems with microservices, databases, scalable architecture, real projects, and mock interviews to help you crack your dream job.",
+    overview: "A comprehensive 6-month program that takes you from backend fundamentals to building production-ready systems and real world projects. Learn from engineers at top companies, gain hands-on experience with real projects & mock interviews, and get placement support with resume review and referrals.",
     icon: "Server",
     highlights: [
       "1:1 Mentorship from senior backend engineers",
-      "Build production-grade projects",
+      "Build production-grade real projects",
       "Microservices architecture patterns",
-      "Database design & optimization",
-      "Resume review & referrals",
-      "API design best practices",
+      "Design patterns & distributed systems",
+      "Resume review & interview referrals",
+      "Mock interviews with feedback",
+      "Placement support & career coaching"
     ],
     modules: [
       {
-        title: "Foundation – Languages & Frameworks",
-        topics: ["Java/Python/Node.js deep dive", "Spring Boot / Express / Django", "REST API Design", "Authentication & Authorization", "Testing strategies"],
+        title: "Foundation – Languages, Frameworks & Concurrency",
+        topics: [
+          "Go/Java/Python/Node.js deep dive",
+          "Spring Boot / Express / Django / Gin",
+          "REST API Design",
+          "Authentication & Authorization",
+          "Concurrency fundamentals & patterns",
+          "Testing strategies (unit & integration)"
+        ]
       },
       {
-        title: "Databases & Storage",
-        topics: ["SQL – PostgreSQL/MySQL", "NoSQL – MongoDB/Redis", "Database indexing & optimization", "Data modeling", "Message queues – Kafka/RabbitMQ"],
+        title: "Databases & Storage Systems",
+        topics: [
+          "SQL – PostgreSQL/MySQL",
+          "NoSQL – MongoDB/Redis",
+          "Database indexing & optimization",
+          "Data modeling & relationships",
+          "Message queues – Kafka/RabbitMQ"
+        ]
       },
       {
-        title: "Microservices & DevOps",
-        topics: ["Microservices patterns", "Docker & containerization", "CI/CD pipelines", "Cloud deployment (AWS/GCP)", "Monitoring & logging"],
+        title: "Microservices, DevOps & Cloud",
+        topics: [
+          "Microservices architecture patterns",
+          "Docker & containerization",
+          "CI/CD pipelines & GitHub Actions",
+          "Cloud deployment (AWS/GCP)",
+          "Monitoring, logging & observability"
+        ]
       },
       {
-        title: "System Design & Scalability",
-        topics: ["High-level system design", "Caching strategies", "Load balancing", "Rate limiting", "Capstone project"],
+        title: "System Design, Scalability & Patterns",
+        topics: [
+          "High-level system design fundamentals",
+          "Caching strategies & load balancing",
+          "Rate limiting, fault tolerance & resiliency",
+          "Design patterns (SOLID, factory, strategy, observer)",
+          "Scalable architecture case studies"
+        ]
       },
-    ],
-  },
+      {
+        title: "Projects & Mock Interviews",
+        topics: [
+          "Build a Food Ordering Platform (order API, menu, cart, payment flows)",
+          "Build an Alert Manager System(event triggers, notification pipelines)",
+          "Build a BookMyShow-style Ticketing Backend (concurrency-safe seat booking, notifications)", 
+          "Build a Distributed Redis-based Caching System (pub/sub, failover)", 
+          "Practice real design patterns in projects for modular & scalable code",
+          "Mock technical interviews with senior mentors",
+          "Resume review, portfolio readiness & interview feedback sessions"
+        ]
+      }
+    ]
+  },  
   {
     slug: "devops-sre",
     title: "DevOps + SRE Engineering Program",
     shortTitle: "DevOps + SRE",
     duration: "6 Months",
-    description: "Master DevOps practices, cloud infrastructure, and Site Reliability Engineering for modern tech companies.",
-    overview: "A 6-month hands-on program covering everything from Linux fundamentals to advanced Kubernetes, CI/CD, and SRE practices. Build the skills to manage infrastructure at scale for top tech companies.",
+    description: "Master DevOps practices, cloud infrastructure, containers, CI/CD, and Site Reliability Engineering with hands-on projects and mock interview preparation to help you land your dream DevOps role.",
+    overview: "A 6-month immersive, hands-on program covering everything from Linux fundamentals to advanced Kubernetes, CI/CD, and SRE practices. Build real cloud infrastructure projects, practice mock interviews with feedback, and get placement support including resume review and referrals.",
     icon: "Cloud",
     highlights: [
       "1:1 Mentorship from DevOps/SRE leads",
-      "Hands-on cloud projects (AWS/GCP/Azure)",
-      "Kubernetes & container orchestration",
-      "CI/CD pipeline design",
-      "Incident management & SRE practices",
-      "Resume review & referrals",
+      "Real-world hands-on projects with cloud deployment",
+      "CI/CD design, Kubernetes & container orchestration",
+      "Infrastructure as Code & automation workflows",
+      "Mock interview rounds with senior engineers",
+      "Incident management & SRE best practices",
+      "Resume review & referrals"
     ],
     modules: [
       {
-        title: "Foundation – Linux & Networking",
-        topics: ["Linux administration", "Shell scripting & automation", "Networking fundamentals", "DNS, HTTP, TCP/IP", "Security basics"],
+        title: "Foundation – Linux, Networking & Automation",
+        topics: [
+          "Linux administration & shell scripting",
+          "Networking fundamentals (DNS, HTTP, TCP/IP)",
+          "Security basics & firewall hardening",
+          "Git & version control fundamentals",
+          "Automation scripts & troubleshooting workflows"
+        ]
       },
       {
-        title: "Cloud & Infrastructure",
-        topics: ["AWS/GCP core services", "Infrastructure as Code (Terraform)", "Configuration management (Ansible)", "Cloud networking & VPC", "Cost optimization"],
+        title: "Cloud & Infrastructure Fundamentals",
+        topics: [
+          "Core services in AWS/GCP/Azure",
+          "Infrastructure as Code with Terraform",
+          "Configuration management with Ansible",
+          "Cloud networking, VPCs & security groups",
+          "Cost optimization best practices"
+        ]
       },
       {
-        title: "Containers & Orchestration",
-        topics: ["Docker deep dive", "Kubernetes architecture", "Helm charts", "Service mesh (Istio)", "Container security"],
+        title: "Containers, Orchestration & CI/CD",
+        topics: [
+          "Docker deep dive & container lifecycle",
+          "Kubernetes architecture & deployments",
+          "Helm charts & service meshes",
+          "CI/CD pipelines with Jenkins/GitHub Actions",
+          "Container security and best practices"
+        ]
       },
       {
         title: "SRE Practices & Observability",
-        topics: ["SLIs, SLOs, SLAs", "Monitoring (Prometheus/Grafana)", "Logging (ELK stack)", "Incident management", "Chaos engineering"],
+        topics: [
+          "SLIs, SLOs & SLAs for reliability",
+          "Monitoring with Prometheus & Grafana",
+          "Logging with ELK stack (Elasticsearch, Logstash, Kibana)",
+          "Incident management & chaos engineering",
+          "Alerting & escalation workflows"
+        ]
       },
-    ],
-  },
+      {
+        title: "Real Projects & Mock Interview Module",
+        topics: [
+          "Build Multi-Cloud CI/CD Pipeline Project (Git → Build → Deploy using Jenkins, Terraform, Docker, Kubernetes) to demonstrate end-to-end automation skills", 
+          "Infrastructure provisioning with Terraform + Ansible on AWS/GCP (IaC skills)",
+          "Monitoring & alerting project with Prometheus + ELK Stack (observability best practices)", 
+          "Kubernetes production scenarios: self-healing clusters & secure deployments",
+          "Real interview mock rounds with feedback from senior engineers (scenario-based & tool-focused)",
+          "DevOps interview tasks & exercises (scenario questions & troubleshooting drills)"
+        ]
+      }
+    ]
+  }
+  ,
   {
     slug: "full-stack",
     title: "Full Stack Engineering Program",
     shortTitle: "Full Stack Engineering",
     duration: "6 Months",
-    description: "Become a complete full stack engineer with modern frontend, backend, and deployment skills.",
-    overview: "A comprehensive 6-month program that covers the entire web development stack – from pixel-perfect frontends to scalable backends and cloud deployment. Graduate ready to build and ship production applications.",
+    description: "Become a complete, job-ready full stack engineer with modern frontend, backend, cloud deployment, real projects, portfolio builds, and interview practice.",
+    overview: "A comprehensive 6-month program that covers the full web development stack — from pixel-perfect frontends to scalable backends, deployment, system design, real project builds, and mock interview preparation. Graduate ready to build and ship production applications with confidence.",
     icon: "Layers",
     highlights: [
       "1:1 Mentorship from full stack leads",
-      "Build 3+ production-ready projects",
-      "Modern React & Next.js",
-      "Backend with Node.js & databases",
-      "Resume review & referrals",
-      "Deployment & DevOps basics",
+      "Build 4+ production-ready projects",
+      "Modern React, Next.js & backend fundamentals",
+      "Portfolio builds & GitHub showcase",
+      "Mock interviews & interview strategy sessions",
+      "Deployment, DevOps basics & cloud hosting",
+      "Resume review & referrals"
     ],
     modules: [
       {
         title: "Frontend Fundamentals",
-        topics: ["HTML5, CSS3, JavaScript (ES6+)", "TypeScript fundamentals", "React.js deep dive", "State management (Redux/Zustand)", "Responsive design & accessibility"],
+        topics: [
+          "HTML5, CSS3, JavaScript (ES6+)",
+          "TypeScript fundamentals",
+          "React.js deep dive",
+          "State management (Redux/Zustand)",
+          "Responsive design & accessibility"
+        ]
       },
       {
-        title: "Advanced Frontend",
-        topics: ["Next.js & SSR/SSG", "Component libraries & design systems", "Testing (Jest, React Testing Library)", "Performance optimization", "Animation & UX patterns"],
+        title: "Advanced Frontend & UX",
+        topics: [
+          "Next.js & SSR/SSG",
+          "Component libraries & design systems",
+          "Testing (Jest, React Testing Library)",
+          "Performance optimization",
+          "Animation & UX/UI patterns"
+        ]
       },
       {
-        title: "Backend & Databases",
-        topics: ["Node.js & Express.js", "RESTful API design", "PostgreSQL & MongoDB", "Authentication (JWT, OAuth)", "File uploads & storage"],
+        title: "Backend, APIs & Databases",
+        topics: [
+          "Node.js / Express.js / Go/Python backend options",
+          "RESTful API design & best practices",
+          "PostgreSQL & MongoDB integration",
+          "Authentication & Authorization (JWT, OAuth)",
+          "File uploads, storage & backend security"
+        ]
       },
       {
-        title: "Full Stack Projects & Deployment",
-        topics: ["Full stack project architecture", "Docker & CI/CD", "Cloud deployment (AWS/Vercel)", "Monitoring & analytics", "Capstone project"],
+        title: "Projects, Deployment & DevOps",
+        topics: [
+          "Full stack project architecture",
+          "Docker & CI/CD pipelines",
+          "Cloud deployment (AWS/Vercel/Cloud Run)",
+          "Monitoring & analytics setup",
+          "Capstone project planning & execution"
+        ]
       },
-    ],
+      {
+        title: "Real Projects & Portfolio Builds",
+        topics: [
+          "E-commerce platform (products, cart, orders)",
+          "Social Media app (feeds, user profiles, real-time features)",
+          "Khatabook-style personal finance tracker (transactions & dashboards)",
+          "Task manager / team collaboration app with real auth",
+          "Push project updates to personal GitHub portfolio"
+        ]
+      },
+      {
+        title: "Interview Prep & Mock Interview Module",
+        topics: [
+          "Full stack interview challenges & best practices",
+          "300+ interview questions spanning frontend, backend & systems",
+          "Mock interviews with senior engineers (technical + behavioural)",
+          "Portfolio walkthrough & project demo coaching",
+          "System design basics for full stack roles",
+          "Debugging & real coding challenge practice"
+        ]
+      }
+    ]
   },
+  {
+    slug: "data-engineering",
+    title: "Data Engineering Program",
+    shortTitle: "Data Engineering",
+    duration: "4 Months",
+    description: "Master the skills to build robust, scalable data pipelines, data warehouses, big data processing systems, and cloud data platforms — with real projects, mock interview prep, and placement support.",
+    overview: "A comprehensive 6-month program that takes you from foundational data engineering concepts to building enterprise-level data pipelines and architectures. Learn SQL, Python, ETL/ELT, big data frameworks, cloud data platforms, orchestration tools, and real project deployments. Includes mock interviews, resume review, and referrals to help launch your career as a Data Engineer.",
+    icon: "Database",
+    highlights: [
+      "1:1 Mentorship from data engineering experts",
+      "Build production-ready data pipelines & platforms",
+      "Hands-on experience with Hadoop, Spark, Kafka & Airflow",
+      "Cloud data platform skills (AWS/GCP/Azure)",
+      "Mock interviews & feedback with senior engineers",
+      "Resume review, portfolio builds & referrals"
+    ],
+    modules: [
+      {
+        title: "Data Engineering Foundations",
+        topics: [
+          "Introduction to Data Engineering & modern data ecosystem",
+          "Role of data engineers & data lifecycle",
+          "Data architecture basics & data stack overview",
+          "Advanced SQL for data engineering",
+          "Python for data processing, automation & scripting"
+        ]
+      },
+      {
+        title: "Data Storage, Modeling & Warehousing",
+        topics: [
+          "Relational & NoSQL database fundamentals",
+          "Data modeling principles (ER modeling, star & snowflake schema)",
+          "Dimensional modeling & OLAP/OLTP systems",
+          "Data warehousing concepts, Redshift/Snowflake basics",
+          "Indexing, partitioning & query performance optimization"
+        ]
+      },
+      {
+        title: "ETL, Pipelines & Workflow Orchestration",
+        topics: [
+          "ETL/ELT processes & pipeline design",
+          "Data ingestion from APIs, files & streaming sources",
+          "Apache Airflow – DAGs, scheduling, monitoring",
+          "Data validation, transformation, and quality checks",
+          "Incremental loads & operational workflows"
+        ]
+      },
+      {
+        title: "Big Data Processing & Real-Time Streams",
+        topics: [
+          "Hadoop ecosystem & HDFS fundamentals",
+          "Apache Spark (batch & streaming) with PySpark/Scala",
+          "Kafka producer/consumer & real-time pipelines",
+          "Processing large datasets with Spark SQL",
+          "Spark optimization & cluster resource tuning"
+        ]
+      },
+      {
+        title: "Cloud Data Platforms & Deployment",
+        topics: [
+          "AWS/GCP/Azure core services for data engineering",
+          "S3, BigQuery, Redshift, Azure Synapse basics",
+          "Serverless data workflows (Glue, Dataflow)",
+          "Cloud storage & lifecycle management",
+          "Cost optimization & security best practices"
+        ]
+      },
+      {
+        title: "Real Projects & Mock Interview Module",
+        topics: [
+          "Build **ETL pipeline project** (ingest → transform → load to data warehouse)",
+          "Design **real-time streaming analytics pipeline** with Kafka & Spark",
+          "Cloud data platform deployment (e.g., AWS/GCP pipeline automation)",
+          "Data quality & testing automation project",
+          "Mock interviews with senior data engineers",
+          "Portfolio & resume walkthrough + interview strategy"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "android-engineering",
+    title: "Android Engineering Program",
+    shortTitle: "Android Engineering",
+    duration: "4 Months",
+    description: "Become a professional Android engineer by mastering Kotlin, Android SDK, Jetpack, app architecture, real projects, and interview skills — ready for mobile development roles.",
+    overview: "A 6-month hands-on Android engineering program — from Kotlin fundamentals and Android platform essentials to advanced app architecture, real-world projects, mock interview prep, and placement support. Learn by building production-grade apps, portfolio showcases, and get 1:1 mentorship and referrals.",
+    icon: "Mobile",
+    highlights: [
+      "1:1 Mentorship from Android leads",
+      "Build production-ready mobile apps",
+      "Kotlin & Android Studio mastery",
+      "Jetpack & modern Android architecture",
+      "Mock technical interviews & review",
+      "Portfolio projects + Google Play deployment",
+      "Resume review & referrals"
+    ],
+    modules: [
+      {
+        title: "Foundation – Kotlin & Android Basics",
+        topics: [
+          "Kotlin language fundamentals & idioms",
+          "Android Studio setup & tools",
+          "Android application components (Activities, Fragments)",
+          "Layouts, Views & UI fundamentals",
+          "Application lifecycles & navigation",
+          "Jetpack Compose basics"
+        ]
+      },
+      {
+        title: "Core Android Development",
+        topics: [
+          "RecyclerView & dynamic lists",
+          "Networking & REST API integration",
+          "Data storage: SQLite, Room & Shared Preferences",
+          "Coroutines & background processing",
+          "Material Design & responsive UI",
+          "Permissions, sensors & device features"
+        ]
+      },
+      {
+        title: "Advanced Architecture & Patterns",
+        topics: [
+          "MVVM & Clean Architecture",
+          "Dependency Injection (Hilt/Dagger)",
+          "State management & UI patterns",
+          "Testing & debugging with Android tools",
+          "Performance optimization",
+          "Offline sync & caching strategies"
+        ]
+      },
+      {
+        title: "Deployment & Professional Practices",
+        topics: [
+          "Publishing apps to Google Play Store",
+          "CI/CD basics for Android apps",
+          "App signing, builds & flavors",
+          "Crash reporting & analytics setup",
+          "Security best practices"
+        ]
+      },
+      {
+        title: "Real Projects & Portfolio Builds",
+        topics: [
+          "Build **E-commerce Android App** (product lists, cart, orders)",
+          "Build **Chat/Messaging App** with real-time updates",
+          "Build **Social Feed App** (profiles, posts, likes)",
+          "Build **Location & Maps App** (geolocation & routing)",
+          "Deploy projects to **Google Play Store**"
+        ]
+      },
+      {
+        title: "Interview Prep & Mock Interview Module",
+        topics: [
+          "Android interview Q&A & problem sets",
+          "Mock interviews with senior engineers",
+          "Android architectural & design discussions",
+          "Debugging challenge rounds",
+          "Portfolio walkthrough & resume coaching"
+        ]
+      }
+    ]
+  }    
 ];
 
 export interface Instructor {
@@ -247,7 +562,7 @@ export const testimonials = [
 ];
 
 export const stats = [
-  { value: "500+", label: "Students Placed" },
+  { value: "80+", label: "Students Placed" },
   { value: "50+", label: "Hiring Partners" },
   { value: "95%", label: "Placement Rate" },
   { value: "4.9/5", label: "Student Rating" },

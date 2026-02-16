@@ -22,7 +22,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-              Trusted by 500+ Engineers
+              Trusted by 80+ Engineers
             </span>
             <h1 className="mb-6 font-display text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
               Crack Your Dream
