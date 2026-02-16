@@ -448,11 +448,11 @@ export const courses: Course[] = [
       {
         title: "Real Projects & Portfolio Builds",
         topics: [
-          "Build **E-commerce Android App** (product lists, cart, orders)",
-          "Build **Chat/Messaging App** with real-time updates",
-          "Build **Social Feed App** (profiles, posts, likes)",
-          "Build **Location & Maps App** (geolocation & routing)",
-          "Deploy projects to **Google Play Store**"
+          "Build E-commerce Android App(product lists, cart, orders)",
+          "Build Chat/Messaging App with real-time updates",
+          "Build Social Feed App (profiles, posts, likes)",
+          "Build Location & Maps App (geolocation & routing)",
+          "Deploy projects to Google Play Store"
         ]
       },
       {
