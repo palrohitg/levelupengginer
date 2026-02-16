@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { courses } from "@/lib/courseData";
-import { Clock, CheckCircle2, Code, Server, Cloud, Layers } from "lucide-react";
+import { Clock, CheckCircle2, Code, Server, Cloud, Layers, Database, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -13,6 +13,8 @@ const iconMap: Record<string, React.ReactNode> = {
   Server: <Server className="h-8 w-8" />,
   Cloud: <Cloud className="h-8 w-8" />,
   Layers: <Layers className="h-8 w-8" />,
+  Database: <Database className="h-8 w-8" />,
+  Mobile: <Smartphone className="h-8 w-8" />,
 };
 
 const CoursePage = () => {

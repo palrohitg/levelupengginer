@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Clock, ArrowRight, Code, Server, Cloud, Layers } from "lucide-react";
+import { Clock, ArrowRight, Code, Server, Cloud, Layers, Database, Smartphone } from "lucide-react";
 import { courses } from "@/lib/courseData";
 import { motion } from "framer-motion";
 
@@ -10,6 +10,8 @@ const iconMap: Record<string, React.ReactNode> = {
   Server: <Server className="h-6 w-6" />,
   Cloud: <Cloud className="h-6 w-6" />,
   Layers: <Layers className="h-6 w-6" />,
+  Database: <Database className="h-6 w-6" />,
+  Mobile: <Smartphone className="h-6 w-6" />,
 };
 
 const CoursesOverview = () => {
@@ -23,7 +25,7 @@ const CoursesOverview = () => {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course, i) => (
             <motion.div
               key={course.slug}
