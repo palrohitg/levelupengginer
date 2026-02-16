@@ -13,6 +13,9 @@ export interface Course {
   icon: string;
   highlights: string[];
   modules: CourseModule[];
+  basePrice?: number;
+  internshipPrice?: number;
+  internshipDuration?: string;
 }
 
 export const courses: Course[] = [
@@ -84,13 +87,17 @@ export const courses: Course[] = [
     shortTitle: "Backend Engineering",
     duration: "4 Months",
     description: "Build production-grade backend systems with microservices, databases, scalable architecture, real projects, and mock interviews to help you crack your dream job.",
-    overview: "A comprehensive 6-month program that takes you from backend fundamentals to building production-ready systems and real world projects. Learn from engineers at top companies, gain hands-on experience with real projects & mock interviews, and get placement support with resume review and referrals.",
+    overview: "A comprehensive 4-month program that takes you from backend fundamentals to building production-ready systems and real world projects. Learn from engineers at top companies, gain hands-on experience with real projects & mock interviews, and get placement support with resume review and referrals.",
     icon: "Server",
+    basePrice: 19999,
+    internshipPrice: 27999,
+    internshipDuration: "2 Months",
     highlights: [
       "1:1 Mentorship from senior backend engineers",
       "Build production-grade real projects",
       "Microservices architecture patterns",
       "Design patterns & distributed systems",
+      "Cloud deployment & DevOps basics",
       "Resume review & interview referrals",
       "Mock interviews with feedback",
       "Placement support & career coaching"

@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LeadCaptureForm from "@/components/LeadCaptureForm";
 import { courses } from "@/lib/courseData";
-import { Clock, CheckCircle2, Code, Server, Cloud, Layers, Database, Smartphone } from "lucide-react";
+import { Clock, CheckCircle2, Code, Server, Cloud, Layers, Database, Smartphone, IndianRupee, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -97,6 +97,118 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        {/* Pricing */}
+        {(course.basePrice || course.internshipPrice) && (
+          <section className="py-16">
+            <div className="container">
+              <h2 className="mb-8 text-center font-display text-2xl font-bold sm:text-3xl">Course Pricing</h2>
+              <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
+                {/* Base Course */}
+                {course.basePrice && (
+                  <motion.div
+                    className="rounded-xl border-2 bg-card p-6"
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <div className="mb-4 flex items-center gap-2">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <Code className="h-5 w-5" />
+                      </div>
+                      <h3 className="font-display text-xl font-semibold">Course Only</h3>
+                    </div>
+                    <div className="mb-2 flex flex-col">
+                      <div className="flex items-baseline gap-1">
+                        <IndianRupee className="h-6 w-6 text-muted-foreground" />
+                        <span className="font-display text-3xl font-bold">{course.basePrice.toLocaleString('en-IN')}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <IndianRupee className="h-4 w-4 text-muted-foreground" />
+                        <span className="font-display text-sm font-medium text-muted-foreground line-through">49,999</span>
+                      </div>
+                    </div>
+                    <p className="mb-4 text-sm text-muted-foreground">{course.duration} Program</p>
+                    <ul className="mb-4 space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Complete course curriculum</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>1:1 Mentorship</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Mock interviews & resume review</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Course completion certificate</span>
+                      </li>
+                    </ul>
+                    <Button asChild className="w-full">
+                      <Link to="/contact">Enroll Now</Link>
+                    </Button>
+                  </motion.div>
+                )}
+
+                {/* Course with Internship */}
+                {course.internshipPrice && (
+                  <motion.div
+                    className="rounded-xl border-2 bg-card p-6"
+                    initial={{ opacity: 0, y: 15 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.3, delay: 0.1 }}
+                  >
+                    <div className="mb-4 flex items-center gap-2">
+                      <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                        <Briefcase className="h-5 w-5" />
+                      </div>
+                      <h3 className="font-display text-xl font-semibold">Course + Internship</h3>
+                    </div>
+                    <div className="mb-2 flex flex-col">
+                      <div className="flex items-baseline gap-1">
+                        <IndianRupee className="h-6 w-6 text-muted-foreground" />
+                        <span className="font-display text-3xl font-bold">{course.internshipPrice.toLocaleString('en-IN')}</span>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <IndianRupee className="h-4 w-4 text-muted-foreground" />
+                        <span className="font-display text-sm font-medium text-muted-foreground line-through">89,999</span>
+                      </div>
+                    </div>
+                    <p className="mb-4 text-sm text-muted-foreground">
+                      {course.duration} Program + {course.internshipDuration} Internship
+                    </p>
+                    <ul className="mb-4 space-y-2 text-sm">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Everything in Course Only</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>{course.internshipDuration} hands-on internship experience</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Real-world project experience</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                        <span>Internship certificate & portfolio</span>
+                      </li>
+                    </ul>
+                    <Button asChild className="w-full">
+                      <Link to="/contact">Enroll with Internship</Link>
+                    </Button>
+                  </motion.div>
+                )}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Lead form */}
         <section className="py-16">
