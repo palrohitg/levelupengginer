@@ -397,8 +397,8 @@ export const courses: Course[] = [
       {
         title: "Real Projects & Mock Interview Module",
         topics: [
-          "Build **ETL pipeline project** (ingest → transform → load to data warehouse)",
-          "Design **real-time streaming analytics pipeline** with Kafka & Spark",
+          "Build ETL pipeline project (ingest → transform → load to data warehouse)",
+          "Design eal-time streaming analytics pipeline with Kafka & Spark",
           "Cloud data platform deployment (e.g., AWS/GCP pipeline automation)",
           "Data quality & testing automation project",
           "Mock interviews with senior data engineers",
