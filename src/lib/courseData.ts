@@ -16,6 +16,7 @@ export interface Course {
   basePrice?: number;
   internshipPrice?: number;
   internshipDuration?: string;
+  whoShouldTake?: string[];   
 }
 
 export const courses: Course[] = [
@@ -95,6 +96,13 @@ export const courses: Course[] = [
     basePrice: 19999,
     internshipPrice: 27999,
     internshipDuration: "2 Months",
+    whoShouldTake: [
+      "Final-year students targeting full-time software roles",
+      "3rd-year students preparing for internships",
+      "Self-taught developers needing structured interview prep",
+      "Engineers struggling past mid-level rounds",
+      "Anyone serious about becoming interview-ready"
+    ],
     highlights: [
       "1:1 Mentorship from senior backend engineers",
       "Build production-grade real projects",
@@ -556,15 +564,15 @@ export const instructors: Instructor[] = [
     bio: "NITK alum. Tech Lead at Paytm. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
     experience: "5+ years",
   },
-  {
-    name: "Rahul",
-    role: "Senior Software Engineer",
-    company: "Dream11",
-    image: "/instructor-rahul.png",
-    linkedin: "http://linkedin.com/in/rahul-agrahari-03a59b162",
-    bio: "Backend Engineer at Dream11. Expertise in building and scaling high-throughput systems that handle millions of users. Passionate about distributed systems and mentoring engineers.",
-    experience: "6+ years",
-  },
+  // {
+  //   name: "Rahul",
+  //   role: "Senior Software Engineer",
+  //   company: "Dream11",
+  //   image: "/instructor-rahul.png",
+  //   linkedin: "http://linkedin.com/in/rahul-agrahari-03a59b162",
+  //   bio: "Backend Engineer at Dream11. Expertise in building and scaling high-throughput systems that handle millions of users. Passionate about distributed systems and mentoring engineers.",
+  //   experience: "6+ years",
+  // },
 ];
 
 export const testimonials = [
