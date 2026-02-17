@@ -550,7 +550,7 @@ export const instructors: Instructor[] = [
     name: "Deepankar Kumar Rao",
     role: "Data Architect",
     company: "Oyo, Park+",
-    image: "/instructor-deepankar.png", // Your photo – place file in public/
+    image: "/instructor-deepankar.jpeg", // Your photo – place file in public/
     linkedin: "https://www.linkedin.com/in/deepankar-rao-615483150/",
     bio: "NIT Kurukshetra alum. Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
     experience: "7+ years",
