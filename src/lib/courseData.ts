@@ -21,8 +21,8 @@ export interface Course {
 export const courses: Course[] = [
   {
     slug: "interview-prep",
-    title: "Interview Prep Course – DSA + CS Fundamentals + System Design",
-    shortTitle: "Interview Prep",
+    title: "Intensive Interview Prep Program – DSA + CS Fundamentals + System Design",
+    shortTitle: "Intensive Interview Prep Program",
     duration: "3 Months",
     description: "Master Data Structures, Algorithms, core Computer Science fundamentals, and System Design to crack interviews at top product-based companies.",
     overview: "An intensive 3-month program designed to transform your problem-solving and technical skills to prepare you for coding rounds and real interview scenarios at FAANG and top product companies. Includes 1:1 mentorship, mock interviews, machine coding challenges, resume review, and referrals.",
