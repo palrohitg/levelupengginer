@@ -550,7 +550,7 @@ export const instructors: Instructor[] = [
     name: "Deepankar Kumar Rao",
     role: "Data Architect",
     company: "Oyo, Park+",
-    image: "/instructor-deepankar.png", // Your photo – place file in public/
+    image: "/instructor-deepankar.jpeg", // Your photo – place file in public/
     linkedin: "https://www.linkedin.com/in/deepankar-rao-615483150/",
     bio: "NIT Kurukshetra alum. Data architect who has built scalable data pipelines at top startups. Expert in designing and running systems that handle data at scale.",
     experience: "7+ years",
@@ -564,15 +564,15 @@ export const instructors: Instructor[] = [
     bio: "NITK alum. Tech Lead at Paytm. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
     experience: "5+ years",
   },
-  // {
-  //   name: "Rahul",
-  //   role: "Senior Software Engineer",
-  //   company: "Dream11",
-  //   image: "/instructor-rahul.png",
-  //   linkedin: "http://linkedin.com/in/rahul-agrahari-03a59b162",
-  //   bio: "Backend Engineer at Dream11. Expertise in building and scaling high-throughput systems that handle millions of users. Passionate about distributed systems and mentoring engineers.",
-  //   experience: "6+ years",
-  // },
+  {
+    name: "Aman",
+    role: "Senior Software Engineer",
+    company: "Swiggy",
+    image: "/instructor-rahul.png",
+    linkedin: "https://www.linkedin.com/in/palrohitg/",
+    bio: "Backend Engineer at Swiggy. Expertise in building and scaling high-throughput systems that handle millions of users. Passionate about distributed systems and mentoring engineers.",
+    experience: "6+ years",
+  },
 ];
 
 export const testimonials = [
