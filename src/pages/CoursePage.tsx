@@ -102,22 +102,22 @@ const CoursePage = () => {
         {(course.basePrice || course.internshipPrice) && (
           <section className="py-16">
             <div className="container">
-              <h2 className="mb-8 text-center font-display text-2xl font-bold sm:text-3xl">Course Pricing</h2>
-              <div className={`mx-auto gap-6 ${course.slug === 'interview-prep' ? 'flex flex-col items-center' : 'grid max-w-4xl sm:grid-cols-2'}`}>
+              <h2 className="mb-8 text-center font-display text-2xl font-bold sm:text-3xl">Program Pricing</h2>
+              <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2">
                 {/* Base Course */}
                 {course.basePrice && (
                   <motion.div
-                    className={`rounded-xl border-2 bg-card p-6 ${course.slug === 'interview-prep' ? 'max-w-md text-center' : ''}`}
+                    className="rounded-xl border-2 bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/50"
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.3 }}
                   >
-                    <div className={`mb-4 flex items-center gap-2 ${course.slug === 'interview-prep' ? 'justify-center' : ''}`}>
+                    <div className="mb-4 flex items-center gap-2">
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                         <Code className="h-5 w-5" />
                       </div>
-                      <h3 className="font-display text-xl font-semibold">Course Only</h3>
+                      <h3 className="font-display text-xl font-semibold">Program</h3>
                     </div>
                     <div className="mb-2 flex flex-col">
                       <div className="flex items-baseline gap-1">
@@ -157,7 +157,7 @@ const CoursePage = () => {
                 {/* Course with Internship */}
                 {course.internshipPrice && (
                   <motion.div
-                    className="rounded-xl border-2 bg-card p-6"
+                    className="rounded-xl border-2 bg-card p-6 transition-all duration-300 hover:shadow-lg hover:border-primary/50"
                     initial={{ opacity: 0, y: 15 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -167,7 +167,7 @@ const CoursePage = () => {
                       <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
                         <Briefcase className="h-5 w-5" />
                       </div>
-                      <h3 className="font-display text-xl font-semibold">Course + Internship</h3>
+                      <h3 className="font-display text-xl font-semibold">Program + Internship</h3>
                     </div>
                     <div className="mb-2 flex flex-col">
                       <div className="flex items-baseline gap-1">
@@ -185,7 +185,7 @@ const CoursePage = () => {
                     <ul className="mb-4 space-y-2 text-sm">
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                        <span>Everything in Course Only</span>
+                        <span>Everything in Program</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
