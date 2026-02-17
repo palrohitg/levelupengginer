@@ -563,6 +563,15 @@ export const instructors: Instructor[] = [
     linkedin: "https://www.linkedin.com/in/jani-shiv-ram/",
     bio: "NITK alum. Tech Lead at Paytm. Full-stack expert with deep experience in developer tools, APIs, and platform engineering.",
     experience: "5+ years",
+  },
+  {
+    name: "Ashutosh Singh",
+    role: "Senior Software Engineer",
+    company: "Amazon, PhysicsWallah",
+    image: "/instructor-ashutosh.jpeg",
+    linkedin: "https://www.linkedin.com/in/ashutosh-singh-70208b154/",
+    bio: "Worked with Amazon and PhysicsWallah as Full-stack expert with deep experience in MERN Stack developer tools, APIs, and platform engineering.",
+    experience: "5+ years",
   }
 ];
 
