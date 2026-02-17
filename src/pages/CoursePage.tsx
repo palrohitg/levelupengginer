@@ -103,7 +103,7 @@ const CoursePage = () => {
           <section className="py-16">
             <div className="container">
               <h2 className="mb-8 text-center font-display text-2xl font-bold sm:text-3xl">Course Pricing</h2>
-              <div className={`mx-auto gap-6 ${course.slug === 'interview-prep' ? 'flex justify-center' : 'grid max-w-4xl sm:grid-cols-2'}`}>
+              <div className={`mx-auto gap-6 ${course.slug === 'interview-prep' ? 'flex flex-col items-center' : 'grid max-w-4xl sm:grid-cols-2'}`}>
                 {/* Base Course */}
                 {course.basePrice && (
                   <motion.div
