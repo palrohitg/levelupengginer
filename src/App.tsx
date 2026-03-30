@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import CoursePage from "./pages/CoursePage";
 import Courses from "./pages/Courses";
 import NotFound from "./pages/NotFound";
+import StartupStudioPage from "./pages/StartupStudioPage";
+import StartupContact from "./pages/StartupContact";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +26,8 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/courses/:slug" element={<CoursePage />} />
+          <Route path="/startup-studio" element={<StartupStudioPage />} />
+          <Route path="/startup-studio/contact" element={<StartupContact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
