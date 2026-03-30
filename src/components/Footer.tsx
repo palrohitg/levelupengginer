@@ -17,17 +17,18 @@ const Footer = () => {
               Empowering engineers to crack top tech companies with expert mentorship and structured learning.
             </p>
           </div>
-
           {/* Quick Links */}
           <div>
             <h4 className="mb-4 font-display font-semibold">Quick Links</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/" className="hover:text-primary transition-colors">Home</Link></li>
+              <li><Link to="/courses" className="hover:text-primary transition-colors">Courses</Link></li>
+              <li><Link to="/startup-studio" className="hover:text-primary transition-colors">Startup Studio</Link></li>
+              <li><Link to="/startup-studio/contact" className="hover:text-primary transition-colors">Book a Discovery Call</Link></li>
               <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
               <li><Link to="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
             </ul>
           </div>
-
           {/* Courses */}
           <div>
             <h4 className="mb-4 font-display font-semibold">Courses</h4>
@@ -40,7 +41,6 @@ const Footer = () => {
               <li><Link to="/courses/android-engineering" className="hover:text-primary transition-colors">Android Engineering</Link></li>
             </ul>
           </div>
-
           {/* Contact */}
           <div>
             <h4 className="mb-4 font-display font-semibold">Contact</h4>
@@ -51,7 +51,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-
         <div className="mt-10 border-t pt-6 text-center text-sm text-muted-foreground">
           © {new Date().getFullYear()} Level Up Engineers. All rights reserved.
         </div>
