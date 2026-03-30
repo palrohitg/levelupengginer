@@ -471,7 +471,7 @@ const StartupStudioSection = () => {
             </div>
 
             <div className="rounded-xl border border-emerald-500/40 bg-emerald-500/5 px-4 py-3 text-xs text-slate-200 sm:text-sm">
-              <p className="mb-1 font-medium text-emerald-200">Currently building for founders at:</p>
+              <p className="mb-1 font-medium text-emerald-200">Built for founders at:</p>
               <div className="flex flex-wrap items-center gap-4 text-[0.75rem] sm:text-sm">
                 <span className="inline-flex items-center gap-1 rounded-full bg-slate-900/70 px-3 py-1">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -492,12 +492,15 @@ const StartupStudioSection = () => {
       </section>
 
       {/* EXISTING CLIENTS */}
-      <section className="border-b bg-background py-16 sm:py-20">
+      <section className="relative border-b bg-background py-16 sm:py-20">
+        {/* Decorative gradients */}
+        <div className="pointer-events-none absolute -left-24 top-10 h-64 w-64 rounded-full bg-primary/20 blur-3xl" />
+        <div className="pointer-events-none absolute -right-24 top-40 h-64 w-64 rounded-full bg-emerald-500/10 blur-3xl" />
         <div className="container">
           <div className="mx-auto mb-10 max-w-3xl text-center">
-            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Existing Client Builds</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Delivered Client Builds</h2>
             <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-              We&apos;re actively building end-to-end products with founders and teams like:
+              We&apos;ve built end-to-end products with founders and teams like:
             </p>
           </div>
 
@@ -522,29 +525,29 @@ const StartupStudioSection = () => {
                   "Web/app platform built for growth—clean architecture, stable deployments, analytics-ready workflows, and fast iteration.",
               },
             ].map((client) => (
-              <div
-                key={client.name}
-                className="group relative overflow-hidden rounded-2xl border bg-card/90 shadow-sm transition-colors hover:border-primary/50"
-              >
-                <div className="absolute inset-0">
-                  <img
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    className="h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.03]"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-black/40" />
-                </div>
-                <div className="relative flex h-full flex-col justify-between p-6">
-                  <div>
-                    <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-black/40 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-primary">
-                      Existing client build
+              <div key={client.name} className="group relative min-h-[320px] overflow-hidden rounded-2xl p-[1px]">
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/60 via-slate-800/20 to-emerald-500/40 opacity-50 transition-opacity group-hover:opacity-100" />
+                <div className="relative flex h-full flex-col overflow-hidden rounded-[1rem] border border-white/10 bg-card/70 p-6 shadow-sm backdrop-blur supports-[backdrop-filter]:bg-card/60">
+                  <div className="absolute inset-0">
+                    <img
+                      src={client.logo}
+                      alt={`${client.name} logo`}
+                      className="h-full w-full object-cover opacity-70 transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/65 to-black/35" />
+                  </div>
+
+                  <div className="relative">
+                    <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-black/35 px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-primary">
+                      Built with studio engineers
                     </div>
                     <h3 className="font-display text-lg font-semibold text-slate-50">{client.name}</h3>
-                    <p className="mt-2 text-sm text-slate-200">{client.description}</p>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-200">{client.description}</p>
                   </div>
-                  <div className="mt-4 flex flex-wrap gap-2 text-[11px] text-slate-200">
-                    <span className="rounded-full bg-black/40 px-3 py-1">MVP → Production</span>
-                    <span className="rounded-full bg-black/40 px-3 py-1">Backend + App + Infra</span>
+
+                  <div className="relative mt-5 flex flex-wrap gap-2 text-[11px]">
+                    <span className="rounded-full bg-black/35 px-3 py-1 text-slate-100">MVP → Production</span>
+                    <span className="rounded-full bg-black/35 px-3 py-1 text-slate-100">Backend + App + Infra</span>
                   </div>
                 </div>
               </div>
