@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import CoursePage from "./pages/CoursePage";
 import Courses from "./pages/Courses";
 import NotFound from "./pages/NotFound";
+import StartupStudioPage from "./pages/StartupStudioPage";
+import StartupContact from "./pages/StartupContact";
 
 const queryClient = new QueryClient();
 
