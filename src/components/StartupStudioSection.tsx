@@ -554,31 +554,6 @@ const StartupStudioSection = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="border-b bg-background py-16 sm:py-20">
-        <div className="container">
-          <div className="mx-auto mb-10 max-w-3xl text-center">
-            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">FAQ</h2>
-            <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-              Short answers to the questions founders ask before they commit.
-            </p>
-          </div>
-
-          <div className="mx-auto max-w-3xl">
-            <Accordion type="single" collapsible className="w-full">
-              {faqs.map((item, idx) => (
-                <AccordionItem key={item.q} value={`faq-${idx}`}>
-                  <AccordionTrigger className="text-left">{item.q}</AccordionTrigger>
-                  <AccordionContent>
-                    <p className="text-muted-foreground">{item.a}</p>
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
-          </div>
-        </div>
-      </section>
-
       {/* FINAL CTA */}
       <section className="bg-background py-16 sm:py-20">
         <div className="container">
@@ -604,6 +579,137 @@ const StartupStudioSection = () => {
             <p className="mt-3 text-xs text-muted-foreground">
               No obligation. If we&apos;re not the right team, we&apos;ll tell you quickly and honestly.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* From Idea to Unicorn - Timeline Section */}
+      <section className="bg-gradient-to-b from-background via-primary/5 to-background py-16 sm:py-20">
+        <div className="container">
+          <div className="mx-auto mb-12 max-w-3xl text-center">
+            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+              From Idea to Unicorn
+            </h2>
+            <p className="mt-4 text-base text-muted-foreground sm:text-lg">
+              We&apos;ve guided hundreds of founders through this exact journey. Here&apos;s what success looks like.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-4xl">
+            <h3 className="mb-8 text-center font-display text-xl font-semibold">Average Timeline to Success</h3>
+            
+            <div className="space-y-6">
+              {[
+                {
+                  phase: "MVP Launch",
+                  timeline: "Weeks 1-4",
+                  description: "Validate your core idea with a working prototype users can test.",
+                  metrics: ["Functional prototype", "First user feedback", "Proof of concept"],
+                },
+                {
+                  phase: "Product-Market Fit",
+                  timeline: "Weeks 5-12",
+                  description: "Iterate based on user feedback. Build features users actually want.",
+                  metrics: ["User retention", "Product iteration cycles", "Market validation"],
+                },
+                {
+                  phase: "Scale & Growth",
+                  timeline: "Months 3-6",
+                  description: "Optimize performance, scale infrastructure, and acquire users.",
+                  metrics: ["Performance optimization", "Infrastructure scaling", "User acquisition"],
+                },
+                {
+                  phase: "Series Funding",
+                  timeline: "Months 6-12",
+                  description: "Build toward Series A with metrics investors care about.",
+                  metrics: ["Repeatable growth loop", "Unit economics", "Scalable operations"],
+                },
+                {
+                  phase: "Series A & Beyond",
+                  timeline: "Year 2+",
+                  description: "Scale the team, expand to new markets, and build the path to unicorn status.",
+                  metrics: ["Team building", "Market expansion", "Path to scale"],
+                },
+              ].map((item, idx) => (
+                <motion.div
+                  key={item.phase}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className="relative"
+                >
+                  <div className="rounded-xl border border-border/50 bg-white/40 p-6 shadow-sm backdrop-blur-sm dark:bg-slate-900/40">
+                    <div className="flex items-start gap-4">
+                      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-primary/10 font-display font-bold text-primary dark:bg-primary/20">
+                        {idx + 1}
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+                          <h4 className="font-display font-semibold">{item.phase}</h4>
+                          <span className="inline-flex w-fit rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary dark:bg-primary/20">
+                            {item.timeline}
+                          </span>
+                        </div>
+                        <p className="mt-2 text-sm text-muted-foreground">{item.description}</p>
+                        <div className="mt-3 flex flex-wrap gap-2">
+                          {item.metrics.map((metric) => (
+                            <span key={metric} className="inline-flex items-center gap-1 rounded-full bg-background px-2 py-1 text-xs font-medium border border-border/50">
+                              <CheckCircle2 className="h-3 w-3 text-primary" />
+                              {metric}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {idx < 4 && (
+                    <div className="absolute -bottom-3 left-6 h-6 w-0.5 bg-gradient-to-b from-primary/50 to-transparent" />
+                  )}
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+              className="mt-10 rounded-xl border border-primary/20 bg-primary/5 p-6 text-center dark:bg-primary/10"
+            >
+              <p className="text-sm font-medium text-foreground">
+                Every startup is different. This timeline is based on real projects we&apos;ve shipped.
+              </p>
+              <p className="mt-2 text-xs text-muted-foreground">
+                Your timeline depends on complexity, team size, and how aggressively you want to move. Let&apos;s talk through your specific situation.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-background py-16 sm:py-20">
+        <div className="container">
+          <div className="mx-auto mb-10 max-w-3xl text-center">
+            <h3 className="mb-2 font-display text-lg font-semibold text-primary">From Idea to Unicorn</h3>
+            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">FAQ</h2>
+            <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+              Short answers to the questions founders ask before they commit.
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-3xl">
+            <Accordion type="single" collapsible className="w-full">
+              {faqs.map((item, idx) => (
+                <AccordionItem key={item.q} value={`faq-${idx}`}>
+                  <AccordionTrigger className="text-left">{item.q}</AccordionTrigger>
+                  <AccordionContent>
+                    <p className="text-muted-foreground">{item.a}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
