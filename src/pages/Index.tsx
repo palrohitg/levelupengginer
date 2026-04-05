@@ -1,10 +1,11 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import CoursesOverview from "@/components/CoursesOverview";
-import WhyUs from "@/components/WhyUs";
-import InstructorShowcase from "@/components/InstructorShowcase";
+import PremiumTrustSection from "@/components/PremiumTrustSection";
+import PremiumFeaturesShowcase from "@/components/PremiumFeaturesShowcase";
+import PremiumLearningJourney from "@/components/PremiumLearningJourney";
 import Testimonials from "@/components/Testimonials";
-import CTABanner from "@/components/CTABanner";
+import PremiumNewsletterSignup from "@/components/PremiumNewsletterSignup";
+import PremiumCTASection from "@/components/PremiumCTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -13,11 +14,12 @@ const Index = () => {
       <Navbar />
       <main>
         <HeroSection />
-        <CoursesOverview />
-        <WhyUs />
-        <InstructorShowcase />
+        <PremiumTrustSection />
+        <PremiumFeaturesShowcase />
+        <PremiumLearningJourney />
         <Testimonials />
-        <CTABanner />
+        <PremiumNewsletterSignup />
+        <PremiumCTASection />
       </main>
       <Footer />
     </div>
