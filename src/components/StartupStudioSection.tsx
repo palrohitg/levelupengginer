@@ -51,7 +51,7 @@ const services = [
   {
     icon: <Layers className="h-5 w-5" />,
     title: "System Design & Scaling",
-    description: "Architecture that can handle growth without a full rewrite.",
+    description: "Architecture that can handle growth without a full rewrite — from MVP to enterprise.",
   },
 ];
 
@@ -59,32 +59,32 @@ const reasons = [
   {
     icon: <Users className="h-5 w-5" />,
     title: "No full team to hire",
-    description: "Skip job posts, interviews, and onboarding. Start building this week, not next quarter.",
+    description: "Skip job posts, interviews, and onboarding. Start building this week, not next quarter — or get expert architecture help for your scaling challenges.",
   },
   {
     icon: <Zap className="h-5 w-5" />,
     title: "Faster than in‑house",
-    description: "You plug into a ready-made senior team that has shipped this before.",
+    description: "You plug into a ready-made senior team that has shipped this before, from MVPs to enterprise-scale systems.",
   },
   {
     icon: <ShieldCheck className="h-5 w-5" />,
     title: "Proven engineers",
-    description: "You work with builders who have seen real product, not a bench of juniors.",
+    description: "You work with builders who have seen real product, from early-stage MVPs to Series A scaling challenges.",
   },
   {
     icon: <Layers className="h-5 w-5" />,
     title: "End‑to‑end ownership",
-    description: "Design, backend, infra, and DevOps in one lane — no handoff chaos.",
+    description: "Design, backend, infra, and DevOps in one lane — no handoff chaos. Perfect for both new builds and system overhauls.",
   },
   {
     icon: <BarChart3 className="h-5 w-5" />,
-    title: "Built for startups",
-    description: "Short cycles, tight feedback, and a constant push toward live users.",
+    title: "Built for growth",
+    description: "Short cycles, tight feedback, and a constant push toward live users. Whether you're at idea stage or scaling to thousands.",
   },
   {
     icon: <Rocket className="h-5 w-5" />,
     title: "From MVP to scale",
-    description: "We stay with you past launch as you iterate and grow.",
+    description: "We stay with you past launch as you iterate and grow — or help architect the next phase of your established product.",
   },
 ];
 
@@ -92,7 +92,7 @@ const StartupStudioSection = () => {
   const faqs = [
     {
       q: "Do we still need to hire engineers?",
-      a: "No. You don’t build a full team. We bring a dedicated studio squad that covers design, backend, app/web, infra, and DevOps—so you can stay focused on growth.",
+      a: "No. You get access to top-tier engineers who have worked at Blinkit, Zomato, Google, Amazon, Microsoft, JioStar & Swiggy. Our dedicated studio squad covers design, backend, app/web, infra, and DevOps—so you can stay focused on growth.",
     },
     {
       q: "How fast can you deliver an MVP?",
@@ -134,7 +134,7 @@ const StartupStudioSection = () => {
                 transition={{ duration: 0.3 }}
               >
                 <span className="h-1.5 w-1.5 rounded-full bg-primary" />
-                Startup Studio for Builders
+                Startup Studio for Builders & Scalers
               </motion.p>
               <motion.h1
                 className="mb-4 font-display text-3xl font-extrabold tracking-tight text-slate-50 sm:text-4xl lg:text-5xl"
@@ -142,7 +142,7 @@ const StartupStudioSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.35, delay: 0.05 }}
               >
-                Turn Your Startup Idea Into a Real Product — Without Hiring Engineers
+                Build Your Startup Idea or Scale Your Existing Product — Without Hiring Engineers
               </motion.h1>
               <motion.p
                 className="mb-8 max-w-xl text-base text-slate-300 sm:text-lg"
@@ -150,8 +150,7 @@ const StartupStudioSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.35, delay: 0.1 }}
               >
-                We design, build, and scale your product with elite engineers so you can stay focused on customers,
-                revenue, and narrative. Idea → MVP → scale — with one execution team.
+                Whether you're turning an idea into reality or scaling a seed/Series A startup, we provide elite engineering teams for design, development, architecture consulting, and scaling solutions. From MVP to enterprise — with one execution team.
               </motion.p>
 
               <motion.div
@@ -349,23 +348,23 @@ const StartupStudioSection = () => {
             {[
               {
                 step: "01",
-                title: "Share your idea",
-                text: "We unpack your vision, target users, and constraints in a focused working session.",
+                title: "Share your vision",
+                text: "We unpack your vision, target users, and constraints in a focused working session — whether it's a new idea or scaling an existing product.",
               },
               {
                 step: "02",
                 title: "Design & plan",
-                text: "We map the first version: flows, architecture, and a build plan aligned to your goals.",
+                text: "We map the solution: flows, architecture, and a build plan aligned to your goals, from MVP to enterprise scaling.",
               },
               {
                 step: "03",
-                title: "Build the MVP fast",
-                text: "We build backend, UI, infra, and AI in weekly iterations with visible progress.",
+                title: "Build or optimize",
+                text: "We build new features, refactor systems, or scale infrastructure in weekly iterations with visible progress.",
               },
               {
                 step: "04",
                 title: "Scale & iterate",
-                text: "Ship to real users, measure, and evolve the product — with the same team.",
+                text: "Ship to real users, measure, and evolve the product — with the same team from idea to IPO.",
               },
             ].map((item) => (
               <div key={item.step} className="flex flex-col gap-3 rounded-xl border bg-card/90 p-5">
@@ -382,9 +381,9 @@ const StartupStudioSection = () => {
       <section className="border-b bg-background py-16 sm:py-20">
         <div className="container">
           <div className="mx-auto mb-8 max-w-3xl text-center">
-            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Skip Hiring. Start Building.</h2>
+            <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">Skip Hiring. Start Building or Scaling.</h2>
             <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-              Compare building a team from scratch with plugging into a Startup Studio that&apos;s ready to ship.
+              Compare building a team from scratch with plugging into a Startup Studio that&apos;s ready to ship — for new products or scaling existing ones.
             </p>
           </div>
 
@@ -428,7 +427,7 @@ const StartupStudioSection = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" />
-                  <span>Battle-tested builders with a track record of shipping real products.</span>
+                  <span>Engineers from Blinkit, Zomato, Google, Amazon, Microsoft, JioStar & Swiggy — enterprise-grade talent from day one.</span>
                 </li>
               </ul>
             </div>
@@ -443,29 +442,28 @@ const StartupStudioSection = () => {
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
               <div>
                 <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-emerald-300">
-                  Built by senior engineers
+                  Top-tier engineering talent
                 </p>
                 <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                  Built by engineers from fast-moving startups.
+                  Engineers from Blinkit, Zomato, Google, Amazon, Microsoft, JioStar & Swiggy
                 </h2>
                 <p className="mt-3 max-w-xl text-sm text-slate-300 sm:text-base">
-                  We&apos;ve shipped SaaS products, internal platforms, and data-heavy systems. We bring those patterns
-                  straight into your startup so you don&apos;t have to rediscover them.
+                  Our team brings battle-tested experience from the world's most demanding tech environments. The same engineers who scaled massive platforms at top companies now help your startup build and scale with enterprise-grade engineering.
                 </p>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-3 md:text-right">
+              <div className="grid gap-4 sm:grid-cols-3 md:text-center">
                 <div>
-                  <p className="font-display text-2xl font-semibold text-slate-50">Weeks</p>
-                  <p className="text-xs text-slate-400">to first working MVP</p>
+                  <p className="font-display text-xl font-semibold text-slate-50">Enterprise-grade</p>
+                  <p className="text-xs text-slate-400">engineering</p>
                 </div>
                 <div>
-                  <p className="font-display text-2xl font-semibold text-slate-50">End‑to‑end</p>
-                  <p className="text-xs text-slate-400">backend, app, infra, AI, DevOps</p>
+                  <p className="font-display text-xl font-semibold text-slate-50">FAANG-level</p>
+                  <p className="text-xs text-slate-400">talent</p>
                 </div>
                 <div>
-                  <p className="font-display text-2xl font-semibold text-slate-50">Zero hires</p>
-                  <p className="text-xs text-slate-400">before you&apos;re live with users</p>
+                  <p className="font-display text-xl font-semibold text-slate-50">Battle-tested</p>
+                  <p className="text-xs text-slate-400">at massive scale</p>
                 </div>
               </div>
             </div>
@@ -586,10 +584,10 @@ const StartupStudioSection = () => {
         <div className="container">
           <div className="mx-auto max-w-3xl rounded-2xl border bg-card/95 p-8 text-center shadow-sm sm:p-10">
             <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-              Stop hiring. Start building.
+              Stop hiring. Start building or scaling.
             </h2>
             <p className="mt-3 text-sm text-muted-foreground sm:text-base">
-              Tell us what you&apos;re trying to build. We&apos;ll share a concrete plan, timeline, and stack recommendation —
+              Tell us what you&apos;re trying to build or scale. We&apos;ll share a concrete plan, timeline, and stack recommendation —
               before anyone writes a line of code.
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-3">
